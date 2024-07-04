@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Game } from '../game-card/game-card.component'; // Ensure the path and import are correct
+import { Game } from '../game-card/game-card.component';
 import { GameCardComponent } from '../game-card/game-card.component';
 
 @Component({
@@ -8,7 +8,7 @@ import { GameCardComponent } from '../game-card/game-card.component';
   templateUrl: './recommended-games.component.html',
   styleUrls: ['./recommended-games.component.scss'],
   standalone: true,
-  imports: [CommonModule, GameCardComponent] // Import CommonModule here
+  imports: [CommonModule, GameCardComponent]
 })
 export class RecommendedGamesComponent implements OnInit {
   public recommendedGames: Game[] = [

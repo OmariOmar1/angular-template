@@ -1,1 +1,7 @@
-<p>players-also-played works!</p>
+<div class="players-also-played">
+    <h2>Recommended for You</h2>
+    <div class="game-cards">
+      <app-game-card *ngFor="let game of playersAlsoPlayed" [game]="game"></app-game-card>
+    </div>
+  </div>
+  
